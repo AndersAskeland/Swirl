@@ -1,7 +1,9 @@
 ---
 title: "Module 1 - The R Programming Environment"
-output: html_notebook
-editor_options: 
+output:
+  pdf_document: default
+  html_notebook: default
+editor_options:
   chunk_output_type: console
 ---
 
@@ -209,6 +211,6 @@ Here is a example where there is recyceling.
 ```{r}
 paste(LETTERS, 1:4, sep = "-")
 ```
-## Missing values
+## 4 - Missing values
 
 dadasdas
