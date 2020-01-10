@@ -63,4 +63,32 @@ c(1, 2, 3, 4) + c(0, 10, 100)
 ```
 
 ## 3 - Sequences of Numbers
+In this section we will create sequences of numbers in R.
+
+In its simplest term, the easiest way to create a sequence of numbers in R is to use the : operator likes this:
+
+```{r}
+1:20
+```
+
+Alternativly you can create "real" numbers using this:
+
+```{r}
+pi:10
+```
+You can also move the other way like this:
+
+```{r}
+15:1
+```
+
+Tip: If you want documentation for a R operator you can do so like this:
+```{r}
+?":"
+```
+
+An alternative to : is the seq() function. This function gives more control. Can be used like this:
+```{r}
+seq(0, 10, by=0.5)
+```
 
