@@ -92,3 +92,123 @@ An alternative to : is the seq() function. This function gives more control. Can
 seq(0, 10, by=0.5)
 ```
 
+We make a sequence and store it as my_seq
+```{r}
+my_seq <- seq(5, 10, length=30)
+```
+
+We can confirm the length of my_seq by:
+```{r}
+length(my_seq)
+```
+
+We can also use our variables to define other things, as for example we want a sequence of 1, 2, 3 with the same length of my_seq.
+```{r}
+## This can be done using ##
+1:length(my_seq)
+
+## or ##
+seq(along.with = my_seq)
+
+## or (this is the best) ##
+seq_along(my_seq)
+```
+These built in functions are often more optimal to use when possible as they are optimized for a certain task.
+
+Another function we can use is rep(), which repeates stuff.
+```{r}
+rep(0, times = 40)
+```
+
+Or like this:
+```{r}
+rep(c(0, 1, 2), times=10)
+```
+
+or like this
+```{r}
+rep(c(0, 1, 2), each = 10)
+```
+
+## 4 - Vectors
+There are two different types of vectors, either atomic or lists. Atomic vectors contains only one type of data while lists contain several types of data.This first part is based on atomic vectors.
+
+#### Example of atomic vector
+> Numeric vector: 1, 2, 3, 4
+
+> Logical vector: TRUE, FALSE, NA (not avaliabe)
+
+> Character vector: "a", "b"
+
+We can create logical by using logical "conditions".
+
+```{r}
+num_vect <- c(0.5, 55, -10, 6)
+tf <- num_vect < 1
+```
+
+We can altenativly do:
+
+```{r}
+num_vect >= 6
+```
+
+We can use the following logical operators to get these expressions
+
+> < = Less than
+
+> > = More than
+
+> == = identical
+
+> != = inequality
+
+> <= Less or equal
+
+> => More or equal
+
+We can also add other stuff to this.
+
+> | = at least one is t
+
+> & = Both is true
+
+> ! = oposite
+
+
+We will now work on character vectors, which are defined by "".
+
+```{r}
+my_char <- c("My", "name", "is")
+```
+
+We can also combine different variables using the paste function to combine stuff.
+```{r}
+paste(my_char, collapse = " ")
+```
+
+We can also add stuff to a vector
+```{r}
+my_name <- c(my_char, "Anders")
+```
+
+Here we combine the paste function with my name.
+
+```{r}
+paste(my_name, collapse = " ")
+```
+
+We can also combine stuff like this
+```{r}
+paste("Hello", "world!", sep = " ")
+paste(1:3,c("X", "Y", "Z"), sep = "")
+```
+
+
+Here is a example where there is recyceling.
+```{r}
+paste(LETTERS, 1:4, sep = "-")
+```
+## Missing values
+
+dadasdas
