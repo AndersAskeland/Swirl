@@ -1,8 +1,8 @@
 ---
 title: "Module 1 - The R Programming Environment"
 output:
-  pdf_document: default
   html_notebook: default
+  pdf_document: default
 editor_options:
   chunk_output_type: console
 ---
@@ -18,7 +18,7 @@ R can be used as a simple calculator using +, -, * and /
 
 A simpler method is to define elements as a variable.
 ```{r define variable}
-x <- 5+7
+x <- 5 + 7
 ```
 
 You can view a variable by typing its name
